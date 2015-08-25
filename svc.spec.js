@@ -11,8 +11,8 @@ describe('Test', function() {
     });
 
     it('that it reads data correctly', function() {
-        var ref = new Firebase('mock://eg.firebaseio.com');
-        // var ref = myService.getRef();
+        // var ref = new Firebase('mock://eg.firebaseio.com/data');
+        var ref = myService.getRef();
         ref.set({
             test: 'success!'
         });

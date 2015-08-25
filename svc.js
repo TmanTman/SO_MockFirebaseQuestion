@@ -19,7 +19,7 @@
         return service;
 
         function startData() {
-            ref = new Firebase('mock://eg.firebaseio.com');
+            ref = new Firebase('mock://eg.firebaseio.com/data');
             ref.on('value', function(snapshot) {
                 _data = snapshot.val();
             });
